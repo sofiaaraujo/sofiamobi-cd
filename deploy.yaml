@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: sofia-finalapp
+  name: sofia-finalapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sofia-finalapp
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: sofia-finalapp
+    spec:
+      containers:
+      - image: sofiaaraujo/sofiamobiwebapp:8
+        name: sofiamobiwebapp
+        ports:
+        - containerPort: 80
+        resources: {}
+status: {}
