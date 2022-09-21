@@ -6,7 +6,7 @@ metadata:
     app: sofia-finalapp
   name: sofia-finalapp
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: sofia-finalapp
